@@ -1,0 +1,13 @@
+@media (max-width: 750px) {
+	.registerFields {
+		width: 100%;
+		border-right: none;
+		border-bottom:1px solid grey;
+	}
+
+	.registerOutputField {
+		width: 100%;
+	}
+
+
+}

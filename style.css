@@ -1,0 +1,220 @@
+body, html {
+	width: 100%;
+	min-height: 100%;
+	margin: 0px;
+	background: linear-gradient(to right, rgb(255, 227, 128), rgb(82, 212, 255)) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.main {
+	padding: 0px;
+	width: 100%;
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+}
+
+.flexContainerForRegistering {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#headerMain1 {
+	opacity: 0.7;
+	letter-spacing: calc(2px + (20 - 2) * ((100vw - 320px) / (1492 - 320)));
+	font-weight: 900;
+	text-align: center;
+	padding-top: 50px;
+	font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1492 - 320)));
+}
+
+input {
+	border: 1px solid grey;
+	border-radius: 8px;
+}
+
+li {
+	padding: 0px;
+}
+
+/*INPUT*/
+
+#headerRegisterFields{
+	opacity: 0.7;
+	font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1492 - 320)));
+	letter-spacing: calc(2px + (6 - 2) * ((100vw - 320px) / (1492 - 320)));
+	font-weight:900;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.registerItemList {
+	list-style: none;
+	padding-top: 50px;
+	padding-left: 0px;
+	text-align: center;
+}
+
+.registerFields {
+	width: 50%;
+	height: 100%;
+	border-right: 1px solid grey;
+}
+
+#submitButton {
+	background: transparent;
+	border:2px solid grey;
+	border-radius: 20px;
+	transition: 1s all;
+}
+
+#submitButton:hover {
+	transform: scale(1.1);
+}
+
+#submitButton:focus {
+	outline: none;
+}
+
+.inputLi {
+	margin-bottom: 16px;
+}
+
+.inputParagraph {
+	margin-bottom: 0px;
+}
+
+.registerInput:focus {
+	outline: none;
+}
+
+.fieldNotCorrect {  /*W JS*/
+	font-size: calc(11px + (13 - 11) * ((100vw - 320px) / (1492 - 320)));
+	color: red;
+	opacity: 0.7;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.notCorrect {
+	border: 1.5px solid red;  /*W JS*/
+}
+
+/*OUTPUT*/
+
+.registerItemListOutput {
+	list-style: none;
+	padding-top: 50px;
+	padding-left: 0px;;
+	text-align: center;
+}
+
+.registerOutputField {
+	width: 50%;
+	height: 100%;
+}
+
+#headerRegisterOutput {
+	opacity: 0.7;
+	font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1492 - 320)));
+	letter-spacing: calc(2px + (6 - 2) * ((100vw - 320px) / (1492 - 320)));
+	font-weight:900;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+
+/*OUTPUT - na dole znajdują się klasy stylizujące wyrzucane dane z bazy na stronę*/
+
+.outputLi {
+	opacity: 0.7;
+	list-style: none;
+	text-align: center;
+	white-space: nowrap;
+	padding: 35px;
+	font-size: calc(15px + (30 - 15) * ((100vw - 320px) / (1492 - 320)));;
+	letter-spacing: calc(2px + (6 - 2) * ((100vw - 320px) / (1492 - 320)));
+}
+
+.outputDataFromUserBase {
+	font-size: calc(13px + (23 - 13) * ((100vw - 320px) / (1492 - 320)));
+	letter-spacing: calc(2px + (6 - 2) * ((100vw - 320px) / (1492 - 320)));
+	text-align: center;
+	white-space: nowrap;
+	padding-top: 20px;
+	font-weight:900;
+	color: rgb(41, 36, 36);	
+}
+
+.outBtnContainer {
+	text-align: center;
+	padding-top: 20px;
+	list-style: none;
+}
+
+#clearBtn {
+	font-size: calc(15px + (25 - 15) * ((100vw - 320px) / (1492 - 320)));;
+	border-radius: 10px;
+	background: linear-gradient(to top, rgba(83, 26, 26, 0.2), rgba(97, 39, 46, 0.4));
+	border: 1px solid;
+	transition: 1s all;
+}
+
+#clearBtn:hover {
+	transform: scale(1.1);
+}
+
+#clearBtn:focus {
+	outline:none;
+}
+
+/*LOADER W TRAKCIE OCZEKIWANIA NA WYJŚCIE DANYCH Z BAZY*/
+
+.loaderParent {
+	height: 70vh;
+	width:auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader {
+	border: 16px solid #ffffff9d;
+	border-radius: 50%;
+	border-top: 16px solid #0099ff9d;
+	border-bottom: 16px solid #0099ff9d;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+
+  /*FOOTER*/
+
+.siteFooter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 10%;
+    border-radius: 5px;
+	background: rgba(0, 153, 255, 0.1);
+	padding-top: 0px;
+}
+
+.createdBy {
+	font-family: 'Roboto', sans-serif;
+	font-size: calc(8px + (17 - 8) * ((100vw - 320px) / (1492 - 320)));;
+	opacity: 0.7;
+	text-align: center;
+}
